@@ -57,3 +57,29 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 375px) and (max-width: 768px){
+    .caja-1{
+        margin: calc(3671vh / 587) calc(125vw / 24);
+    } 
+    .caja-2{
+        width: calc(1075vw / 12);                                      
+        height: calc(2400vh / 587); 
+        top: calc(12000vh / 587);
+        left: calc(125vw / 24);
+    }
+    .caja-3{
+        width: calc(1075vw / 12);                          
+        height: calc(6650vh / 587);                          
+        left: 0;
+        bottom: 0;
+        margin: calc(125vw / 24);
+    }
+    .caja-4{
+        width: calc(1075vw / 12);                          
+        height: calc(5050vh / 587);          
+        bottom: calc(11850vh / 587);
+        left: calc(125vw / 24);
+    }
+}
+    
