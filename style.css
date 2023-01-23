@@ -59,6 +59,9 @@
 }
 
 @media (min-width: 375px) and (max-width: 768px){
+
+    /*Responsividad tablet*/
+
     .caja-1{
         margin: calc(3671vh / 587) calc(125vw / 24);
     } 
@@ -70,7 +73,8 @@
     }
     .caja-3{
         width: calc(1075vw / 12);                          
-        height: calc(6650vh / 587);                          
+        height: calc(6650vh / 587);
+        top: auto;                          
         left: 0;
         bottom: 0;
         margin: calc(125vw / 24);
@@ -83,3 +87,8 @@
     }
 }
     
+@media (max-width: 375px){
+    .contenedor-padre{
+        background-color: aquamarine;
+    }
+}
