@@ -1,27 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.contenedor-padre{
+.cnt-padre{
     width: 100vw;
     height: 100vh;
     background-color: lightgray;
     position: relative;
 }
 
-.caja-1{
-    border: 2px solid black;
-    background-color: lightcoral;
+.cnt-logo{
     position: absolute;
     top: 0; 
     left: 0;
     margin: calc(25vw / 9);
 }
 
-.caja-2{
-    border: 2px solid black;
+.cnt-input{
     width: calc(2785vw / 72);                                       
     height: calc(75vh / 16);                                       
     background-color: lightblue;
@@ -30,8 +27,7 @@
     left: calc(50vw / 3);
 }
 
-.caja-3{
-    border: 2px solid black;
+.cnt-output{
     width: calc(250vw / 9);                           
     height: calc(1475vh / 16);                          
     background-color: lightgreen;
@@ -40,8 +36,7 @@
     top: 0;
     margin: calc(25vw / 9);
 }
-.caja-4{
-    border: 2px solid black;
+.cnt-botones{
     width: calc(425vw / 9);                           
     height: calc(2525vh / 256);                          
     background-color: lightpink;
@@ -50,7 +45,7 @@
     left: calc(50vw / 3);
 }
 
-.caja-1, .caja-2, .caja-3, .caja-4{
+.cnt-logo, .cnt-input, .cnt-output, .cnt-botones{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,16 +56,16 @@
 
     /*Responsividad tablet*/
 
-    .caja-1{
-        margin: calc(3671vh / 587) calc(125vw / 24);
+    .cnt-logo{
+        margin: calc(3671vh / 587) calc(-75vw / 128);
     } 
-    .caja-2{
+    .cnt-input{
         width: calc(1075vw / 12);                                      
         height: calc(2400vh / 587); 
         top: calc(12000vh / 587);
         left: calc(125vw / 24);
     }
-    .caja-3{
+    .cnt-output{
         width: calc(1075vw / 12);                          
         height: calc(6650vh / 587);
         top: auto;                          
@@ -78,7 +73,7 @@
         bottom: 0;
         margin: calc(125vw / 24);
     }
-    .caja-4{
+    .cnt-botones{
         width: calc(1075vw / 12);                          
         height: calc(5050vh / 587);          
         bottom: calc(11850vh / 587);
@@ -90,16 +85,16 @@
 
     /* Responsibidad para celular */
 
-    .caja-1{
-        margin: calc(800vh / 311) calc(64vw / 15);
+    .cnt-logo{
+        margin: calc(800vh / 311) calc(-38vw / 5);
     } 
-    .caja-2{
+    .cnt-input{
         width: calc(1372vw / 15);                                    
         height: calc(1600vh / 311); 
         top: calc(15200vh / 933);
         left: calc(64vw / 15);
     }
-    .caja-3{
+    .cnt-output{
         width: calc(436vw / 5);                          
         height: calc(6200vh / 311);
         top: auto;                          
@@ -107,7 +102,7 @@
         bottom: 0;
         margin: calc(4000vh / 933) calc(32vw / 5);
     }
-    .caja-4{
+    .cnt-botones{
         width: calc(1372vw / 15);                          
         height: calc(15800vh / 933);          
         bottom: calc(29000vh / 933);
