@@ -15,12 +15,15 @@ body{
 }
 
 .text{
-    position: absolute;
-    left: 50%;
+    display: flex;
+    position: relative;
+    top: 50%;
     
 }
 
 .text textarea{
+    width: 40%;
+    max-height: 60%;
 }
 
 @media (min-width: 375px) and (max-width: 768px){
