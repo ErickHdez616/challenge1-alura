@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Inter';
 }
 
 .cnt-padre{
@@ -19,13 +19,28 @@
 }
 
 .cnt-input{
-    width: calc(2785vw / 72);                                       
-    height: calc(75vh / 16);                                       
+    width: calc(425vw / 9);                                       
+    height: calc(225vh / 4);                                       
     background-color: lightblue;
     position: absolute;
     top: calc(525vh / 32);
     left: calc(50vw / 3);
 }
+
+.cnt-input textarea{
+    resize: none;
+    border: none;
+    width: inherit;
+    height: inherit;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.cnt-input textarea::placeholder{
+    color: #0A3871;
+}
+
 
 .cnt-output{
     width: calc(250vw / 9);                           
@@ -61,7 +76,7 @@
     } 
     .cnt-input{
         width: calc(1075vw / 12);                                      
-        height: calc(2400vh / 587); 
+        height: calc(28800vh / 587); 
         top: calc(12000vh / 587);
         left: calc(125vw / 24);
     }
@@ -90,7 +105,7 @@
     } 
     .cnt-input{
         width: calc(1372vw / 15);                                    
-        height: calc(1600vh / 311); 
+        height: calc(10000vh / 311); 
         top: calc(15200vh / 933);
         left: calc(64vw / 15);
     }
