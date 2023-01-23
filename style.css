@@ -1,2 +1,39 @@
 /* Rama de prueba A */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.hdr-img{
+    width: auto;
+    margin: 2.77%;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    
+}
+
+.text textarea{
+}
+
+@media (min-width: 375px) and (max-width: 768px){
+    /*Tablet*/
+    .hdr-img{
+        margin: 9.56% -0.52%;
+    }
+} 
+
+
+@media (max-width: 375px){
+    /*Celular*/
+    .hdr-img{
+        margin: 6.4% -7.46%;
+    }
+} 
