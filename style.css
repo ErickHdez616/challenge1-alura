@@ -56,6 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 @media (min-width: 375px) and (max-width: 768px){
@@ -88,7 +89,30 @@
 }
     
 @media (max-width: 375px){
-    .contenedor-padre{
-        background-color: aquamarine;
+
+    /* Responsibidad para celular */
+
+    .caja-1{
+        margin: calc(800vh / 311) calc(64vw / 15);
+    } 
+    .caja-2{
+        width: calc(1372vw / 15);                                    
+        height: calc(1600vh / 311); 
+        top: calc(15200vh / 933);
+        left: calc(64vw / 15);
+    }
+    .caja-3{
+        width: calc(436vw / 5);                          
+        height: calc(6200vh / 311);
+        top: auto;                          
+        left: 0;
+        bottom: 0;
+        margin: calc(4000vh / 933) calc(32vw / 5);
+    }
+    .caja-4{
+        width: calc(1372vw / 15);                          
+        height: calc(15800vh / 933);          
+        bottom: calc(29000vh / 933);
+        left: calc(64vw / 15);
     }
 }
