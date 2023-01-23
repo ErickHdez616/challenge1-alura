@@ -43,6 +43,7 @@ body{
     border: none;
     resize: none;
     outline: none;
+    text-align: left;
     font-family: inherit;
     font-style: normal;
     font-size: 32px;
@@ -50,7 +51,6 @@ body{
     background-color: #E5E5E5;
     margin-left: 240px;
     padding: 0;
-    text-align: left;
 }
 
 #text-input{
