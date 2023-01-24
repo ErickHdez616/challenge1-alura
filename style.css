@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    
 }
 
 .cnt-padre{
@@ -61,9 +60,9 @@
     border-radius: 32px;
 }
 
-.cnt-output h1{
+.cnt-output h3{
     font-weight: 700;
-    font-size: 29px;
+    font-size: 26px;
     text-align: center;
     line-height: 120%;
     color: #343A40;
@@ -193,6 +192,10 @@
         margin: calc(4000vh / 933) calc(32vw / 5);
     }
 
+    .cnt-output h3{
+        font-size: 24px;
+    }
+
     .cnt-output img, .cnt-output br{
         display: none;
     }
@@ -217,5 +220,8 @@
     }
 }
 
-/*Para la parte 2*/
+/*Para la parte 2 sobre la ramaContainersEstilizada2*/
 
+.cnt-padre{
+    background-color: aqua;
+}
