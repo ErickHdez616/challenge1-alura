@@ -1,8 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter';
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
 }
 
 .cnt-padre{
@@ -152,6 +153,11 @@
         bottom: 0;
         margin: calc(125vw / 24);
     }
+
+    .cnt-output img, .cnt-output br{
+        display: none;
+    }
+
     .cnt-botones{
         width: calc(1075vw / 12);                          
         height: calc(5050vh / 587);          
@@ -174,7 +180,7 @@
     } 
     .cnt-input{
         width: calc(1372vw / 15);                                    
-        height: calc(10000vh / 311); 
+        height: calc(9000vh / 311); 
         top: calc(15200vh / 933);
         left: calc(64vw / 15);
     }
@@ -186,6 +192,11 @@
         bottom: 0;
         margin: calc(4000vh / 933) calc(32vw / 5);
     }
+
+    .cnt-output img, .cnt-output br{
+        display: none;
+    }
+
     .cnt-botones{
         width: calc(1372vw / 15);                          
         height: calc(19000vh / 933);          
@@ -205,3 +216,6 @@
         height: calc(6700vh / 933);                            
     }
 }
+
+/*Para la parte 2*/
+
