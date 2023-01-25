@@ -11,7 +11,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <script src="criptador.js"></script>
     </head>
     <body>  
         <div class="cnt-padre">
@@ -23,8 +22,6 @@
             </div>
         <div class="cnt-output">
                 <!-- Único cambio aquí -->
-                <textarea class="output-salida"></textarea>
-                <button class="btn3">Copiar</button>
             </div>
         <div class="cnt-botones">
                 <div class="alerta">
@@ -32,10 +29,11 @@
                     <p>Sólo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botones">
-                    <a href="index2.html"><button class="btn1" onclick="accionA()">Encriptar</button></a>
-                    <a href="index.html"><button class="btn2" onclick="accionB()">Desencriptar</button></a>
+                    <button class="btn1" onclick="accionA()">Encriptar</button>
+                    <button class="btn2" onclick="accionB()">Desencriptar</button>
                 </div>
             </div>
         </div>
+        <script src="criptador.js"></script>
     </body>
 </html>
