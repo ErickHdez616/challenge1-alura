@@ -2,7 +2,7 @@ var textoInput = document.getElementById("campo1");
 var imagen = document.getElementById("persona");
 var txt1 = document.getElementById("txt1");
 var txt2 = document.getElementById("txt2");
-var textoOutput = document.querySelector(".output-salida"); // var textoOutput = document.getElementById("campo2");
+var textoOutput = document.querySelector(".output-salida"); 
 var copiar = document.querySelector(".btn3");
 var textoParaEncriptar;
 var textoParaDesencriptar;
@@ -10,7 +10,8 @@ var textoParaDesencriptar;
 // Funciones de los botones al ser apretados
 
 function accionBotonEncriptar(){
-    if(textoInput.value.length == 0){
+    
+    if(window.matchMedia("(min-width: 1180px)").matches && textoInput.value.length == 0){
         ocultarCopiar_y_Output();
         mostrarImg_y_Txt();
     }else{
@@ -18,10 +19,25 @@ function accionBotonEncriptar(){
         mostrarCopiar_y_Output();
         encriptarTexto();
     }
+    
+    if(window.matchMedia("(min-width: 375px) and (max-width: 1180px)").matches && textoInput.value.length == 0){
+        ocultarCopiar_y_Output();
+        imagen.style.display = "none";
+        txt1.style.display = "block";
+        txt2.style.display = "block";
+     }
+
+    if(window.matchMedia("(max-width: 375px)").matches && textoInput.value.length == 0){
+        ocultarCopiar_y_Output();
+        imagen.style.display = "none";
+        txt1.style.display = "block";
+        txt2.style.display = "block";
+     }
 }
 
 function accionBotonDesencriptar(){
-    if(textoInput.value.length == 0){
+
+    if(window.matchMedia("(min-width: 1180px)").matches && textoInput.value.length == 0){
         ocultarCopiar_y_Output();
         mostrarImg_y_Txt();
     }else{
@@ -29,6 +45,21 @@ function accionBotonDesencriptar(){
         mostrarCopiar_y_Output();
         desencriptarTexto();
     }
+
+    if(window.matchMedia("(min-width: 375px) and (max-width: 1180px)").matches && textoInput.value.length == 0){
+        ocultarCopiar_y_Output();
+        imagen.style.display = "none";
+        txt1.style.display = "block";
+        txt2.style.display = "block";
+     }
+    
+    if(window.matchMedia("(max-width: 375px)").matches && textoInput.value.length == 0){
+        ocultarCopiar_y_Output();
+        imagen.style.display = "none";
+        txt1.style.display = "block";
+        txt2.style.display = "block";
+     }
+
 }
 
 function accionBotonCopiar(){

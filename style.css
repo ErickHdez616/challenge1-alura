@@ -22,7 +22,6 @@
 .cnt-input{
     width: calc(425vw / 9);                                       
     height: calc(225vh / 4);                                       
-    background-color: lightblue;
     position: absolute;
     top: calc(525vh / 32);
     left: calc(50vw / 3);
@@ -158,9 +157,7 @@
     margin: calc(20vw / 9);
 } 
 
-@media (min-width: 375px) and (max-width: 1180px){ /*768 para tablet alura*/
-
-    /*Responsividad tablet*/
+@media (min-width: 375px) and (max-width: 1180px){ 
     
     .cnt-padre{
         max-width: 100%;
@@ -186,11 +183,11 @@
     }
 
     .cnt-output h3{
-        font-size: 22px;
+        font-size: 24px;
     }
     
     .cnt-output p{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .cnt-output img, .cnt-output br{
@@ -225,8 +222,6 @@
     
 @media (max-width: 375px){      
 
-    /* Responsibidad para celular */
-
     .cnt-padre{
         max-width: 100%;
         height: calc(171500vh / 933);
@@ -249,10 +244,6 @@
         bottom: 0;
         margin: calc(4000vh / 933) calc(32vw / 5);
     }
-   
-    /* .mensajes{
-        width: calc(1052vw / 15);
-    } */
 
     .cnt-output h3{
         flex-basis: 100%;
@@ -287,7 +278,7 @@
         justify-content: space-between;
     }
 
-    .btn1, .btn2, .btn3{
+    .btn1, .btn2{
         width: 100%; 
         height: calc(6700vh / 933);                            
     }
