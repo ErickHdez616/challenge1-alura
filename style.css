@@ -227,6 +227,11 @@
 
     /* Responsibidad para celular */
 
+    .cnt-padre{
+        max-width: 100%;
+        height: calc(171500vh / 933);
+    }
+
     .cnt-logo{
         margin: calc(800vh / 311) calc(-38vw / 5);
     } 
@@ -238,20 +243,26 @@
     }
     .cnt-output{
         width: calc(436vw / 5);                          
-        height: calc(6200vh / 311);
+        height: calc(59500vh / 933);
         top: auto;                          
         left: 0;
         bottom: 0;
         margin: calc(4000vh / 933) calc(32vw / 5);
     }
    
-    .mensajes{
+    /* .mensajes{
         width: calc(1052vw / 15);
-    }
+    } */
 
     .cnt-output h3{
         flex-basis: 100%;
         font-size: 24px;
+    }
+
+    .output-salida {
+        width: calc(372vw / 5);
+        height: calc(14400vh / 311);
+        margin: calc(128vw / 15);
     }
 
     .cnt-output p{
@@ -265,7 +276,7 @@
     .cnt-botones{
         width: calc(1372vw / 15);                          
         height: calc(19000vh / 933);          
-        bottom: calc(29000vh / 933);
+        bottom: calc(68300vh / 933);
         left: calc(64vw / 15);
         justify-content: space-between;
     }
@@ -279,6 +290,12 @@
     .btn1, .btn2, .btn3{
         width: 100%; 
         height: calc(6700vh / 933);                            
+    }
+
+    .btn3{
+        width: calc(372vw / 5);
+        height: calc(6700vh / 933);
+        margin: calc(128vw / 15);
     }
 }
 
