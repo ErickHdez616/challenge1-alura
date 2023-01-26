@@ -1,5 +1,4 @@
 *{
->>>>>>> ramaJavaScriptCorrespondida
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -89,7 +88,6 @@
 }
 
 .alerta{
->>>>>>> ramaJavaScriptCorrespondida
     display: flex;
     justify-content: left;
 }
