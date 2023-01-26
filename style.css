@@ -131,10 +131,41 @@
     border: 1px solid #0A3871;
 }
 
+/* Lo que haría el botón encriptar en JS  */
+
+.output-salida{
+    display: none;
+}
+
+.btn3{
+    display: none;
+}
+
+.output-salida{
+    border: none;
+    outline: none;
+    resize: none;
+    width: calc(70vw / 3); 
+    height: calc(19525vh / 256);
+    margin: calc(20vw /9);
+    line-height: 150%;
+    font-size: 24px;
+    color: #495057;
+}
+
+.btn3{
+    background-color: #FFFFFF;
+    margin: calc(20vw / 9);
+} 
 
 @media (min-width: 375px) and (max-width: 1180px){ /*768 para tablet alura*/
 
     /*Responsividad tablet*/
+    
+    .cnt-padre{
+        max-width: 100%;
+        height: calc(138400vh / 1174);
+    }
 
     .cnt-logo{
         margin: calc(3671vh / 587) calc(-75vw / 128);
@@ -147,7 +178,7 @@
     }
     .cnt-output{
         width: calc(1075vw / 12);                          
-        height: calc(6650vh / 587);
+        height: calc(17150vh / 587);
         top: auto;                          
         left: 0;
         bottom: 0;
@@ -166,22 +197,22 @@
         display: none;
     }
 
-    .output-salida{
-        width: calc(325vw / 4);
-        margin: calc(25vw / 6) calc(25vw / 6) 0 calc(25vw / 6);   
-        height: calc(9000vh / 587); 
-    }
-
     .cnt-botones{
         width: calc(1075vw / 12);                          
         height: calc(5050vh / 587);          
-        bottom: calc(11850vh / 587);
+        bottom: calc(22350vh / 587);
         left: calc(125vw / 24);
     }
 
     .btn1, .btn2, .btn3{
         width: calc(2075vw / 48);               
         height: calc(3350vh / 587);               
+    }
+
+    .output-salida{
+        width: calc(325vw / 4);
+        margin: calc(25vw / 6) calc(25vw / 6) 0 calc(25vw / 6);   
+        height: calc(9000vh / 587); 
     }
 
     .btn3{
@@ -251,29 +282,4 @@
     }
 }
 
-/* Lo que haría el botón encriptar en JS  */
 
-.output-salida{
-    display: none;
-}
-
-.btn3{
-    display: none;
-}
-
-.output-salida{
-    border: none;
-    outline: none;
-    resize: none;
-    width: calc(70vw / 3); 
-    height: calc(19525vh / 256);
-    margin: calc(20vw /9);
-    line-height: 150%;
-    font-size: 24px;
-    color: #495057;
-}
-
-.btn3{
-    background-color: #FFFFFF;
-    margin: calc(20vw / 9);
-} 
