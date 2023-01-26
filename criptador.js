@@ -18,7 +18,6 @@ function accionBotonEncriptar(){
         mostrarCopiar_y_Output();
         encriptarTexto();
     }
-    
 }
 
 function accionBotonDesencriptar(){
@@ -34,9 +33,7 @@ function accionBotonDesencriptar(){
 
 function accionBotonCopiar(){
     let textoCopiado = textoOutput.value;
-    navigator.clipboard.writeText(textoCopiado).then(() =>{
-        alert("Texto copiado al portapapeles");
-    }); 
+    navigator.clipboard.writeText(textoCopiado); 
 }
 
 // Funciones extra 

@@ -1,5 +1,3 @@
-/*Código CSS3 terminado, sin JS*/
-
 *{
     margin: 0;
     padding: 0;
@@ -168,6 +166,12 @@
         display: none;
     }
 
+    .output-salida{
+        width: calc(325vw / 4);
+        margin: calc(25vw / 6) calc(25vw / 6) 0 calc(25vw / 6);   
+        height: calc(9000vh / 587); 
+    }
+
     .cnt-botones{
         width: calc(1075vw / 12);                          
         height: calc(5050vh / 587);          
@@ -179,6 +183,12 @@
         width: calc(2075vw / 48);               
         height: calc(3350vh / 587);               
     }
+
+    .btn3{
+        width: calc(325vw / 4);
+        height: calc(3350vh / 587);   
+        margin: calc(25vw / 6);
+    } 
 
 }
     
