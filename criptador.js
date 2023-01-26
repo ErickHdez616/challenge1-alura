@@ -2,7 +2,7 @@ var textoInput = document.getElementById("campo1");
 var imagen = document.getElementById("persona");
 var txt1 = document.getElementById("txt1");
 var txt2 = document.getElementById("txt2");
-var salida = document.getElementById("campo2");
+var textoOutput = document.getElementById("campo2");
 var copiar = document.getElementById("btn3");
 
 var textoParaEncriptar;
@@ -33,6 +33,13 @@ function accionBotonDesencriptar(){
     }
 }
 
+function accionBotonCopiar(){
+    let textoCopiado = textoOutput.value;
+    navigator.clipboard.writeText(textoCopiado).then(() =>{
+        alert("Texto copiado al portapapeles");
+    }); 
+}
+
 // Funciones extra 
 
 function ocultarImg_y_Txt(){ 
@@ -46,11 +53,11 @@ function mostrarImg_y_Txt(){
 }
 
 function mostrarCopiar_y_Output(){
-    return [salida.style.display = "block", copiar.style.display = "block"];
+    return [textoOutput.style.display = "block", copiar.style.display = "block"];
 }
 
 function ocultarCopiar_y_Output(){
-    return [salida.style.display = "none", copiar.style.display = "none"];
+    return [textoOutput.style.display = "none", copiar.style.display = "none"];
 }
 
 // Aquí las funciones propias de encriptar y desencriptar per se
@@ -100,7 +107,7 @@ function encriptarTexto(){
         palabraEncriptada = palabraEncriptada + arr[j];
     }
 
-    return salida.innerHTML = palabraEncriptada;
+    return textoOutput.innerHTML = palabraEncriptada;
     
 }
 
@@ -110,8 +117,6 @@ function desencriptarTexto(){
     // Código de desencriptación:
 
     textoParaDesencriptar = textoInput.value.toLowerCase();
-    
-    // Código de desencriptación:
 
     var palabraDesencriptada = textoParaDesencriptar.replaceAll('enter', 'e');
     palabraDesencriptada = palabraDesencriptada.replaceAll('imes', 'i');
@@ -119,9 +124,8 @@ function desencriptarTexto(){
     palabraDesencriptada = palabraDesencriptada.replaceAll('ober', 'o');
     palabraDesencriptada = palabraDesencriptada.replaceAll('ufat', 'u');
 
-    return salida.innerHTML = palabraDesencriptada;
+    return textoOutput.innerHTML = palabraDesencriptada;
 }
-
 
 
 
