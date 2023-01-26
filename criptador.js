@@ -58,7 +58,8 @@ function ocultarCopiar_y_Output(){
 function encriptarTexto(){
     textoParaEncriptar = textoInput.value.toLowerCase();
     
-    // Código de encriptación...
+    // Código de encriptación:
+
     var str = textoParaEncriptar;
     var arr = [];
 
@@ -105,12 +106,24 @@ function encriptarTexto(){
 
 function desencriptarTexto(){
     textoParaDesencriptar = textoInput.value;
-    return salida.innerHTML = textoParaDesencriptar;
-    // Código de desencriptación...
+
+    // Código de desencriptación:
+
+    textoParaDesencriptar = textoInput.value.toLowerCase();
+    
+    // Código de desencriptación:
+
+    var palabraDesencriptada = textoParaDesencriptar.replaceAll('enter', 'e');
+    palabraDesencriptada = palabraDesencriptada.replaceAll('imes', 'i');
+    palabraDesencriptada = palabraDesencriptada.replaceAll('ai', 'a');
+    palabraDesencriptada = palabraDesencriptada.replaceAll('ober', 'o');
+    palabraDesencriptada = palabraDesencriptada.replaceAll('ufat', 'u');
+
+    return salida.innerHTML = palabraDesencriptada;
 }
 
-// Código de encriptación
 
 
 
 
+    
