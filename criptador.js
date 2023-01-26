@@ -2,9 +2,8 @@ var textoInput = document.getElementById("campo1");
 var imagen = document.getElementById("persona");
 var txt1 = document.getElementById("txt1");
 var txt2 = document.getElementById("txt2");
-var textoOutput = document.getElementById("campo2");
-var copiar = document.getElementById("btn3");
-
+var textoOutput = document.querySelector(".output-salida"); // var textoOutput = document.getElementById("campo2");
+var copiar = document.querySelector(".btn3");
 var textoParaEncriptar;
 var textoParaDesencriptar;
 
