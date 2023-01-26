@@ -1,182 +1,295 @@
- /* Esta es la rama master */
-
-/*Index*/
-
-body{
-    background-color: #E5E5E5;
+*{
+>>>>>>> ramaJavaScriptCorrespondida
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.principal{
+.cnt-padre{
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E5E5;
+    position: relative;
+}
+
+.cnt-logo{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    margin: calc(25vw / 9);
+}
+
+.cnt-input{
+    width: calc(425vw / 9);                                       
+    height: calc(225vh / 4);                                       
+    position: absolute;
+    top: calc(525vh / 32);
+    left: calc(50vw / 3);
+}
+
+.cnt-input textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    width: inherit;
+    height: inherit;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    background-color: #E5E5E5;
+}
+
+.cnt-input textarea::placeholder{
+    color: #0A3871;
+}
+
+
+.cnt-output{
+    width: calc(250vw / 9);                           
+    height: calc(1475vh / 16);                          
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: calc(25vw / 9);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 1024px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
 }
 
-.p1{
-    width: 1000px;
-    height: 1024px;
-    flex-basis: 60%;
+.cnt-output h3{
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    line-height: 120%;
+    color: #343A40;
+    margin-bottom: 16px;
+}
+
+.cnt-output p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.cnt-botones{
+    width: calc(425vw / 9);                           
+    height: calc(2525vh / 256);                          
+    position: absolute;
+    bottom: calc(225vh / 32);
+    left: calc(50vw / 3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cont-logo{
-    height: 168px;
-}
-
-.logo-img{
-    margin: 40px;
-}
-
-.cont-entrada{
-    height: 683px;
-    margin-top: -18px;
-}   
-
-.cont-entrada textarea{
-    width: 680px;
-    height: 600px;      
-    border: none;
-    resize: none;
-    outline: none;
-    text-align: left;
-    font-family: inherit;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 150%;
-    background-color: #E5E5E5;
-    margin-left: 240px;
-    padding: 0;
-}
-
-#text-input{
-    color: #0A3871;
-}
-
-.cont-entrada textarea::placeholder{
-    color: #0A3871;
-}
-
-.cont-botones{
-    height: 155px;
-}
-
-.advertencia{
-    margin-left: 240px; 
+.alerta{
+>>>>>>> ramaJavaScriptCorrespondida
     display: flex;
-    align-items: center;
+    justify-content: left;
 }
 
-#advertencia-img{
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-}
-
-#advertencia-msj{
-    width: 205px;
-    height: 18px;
-    font-family: 'Inter';
-    font-size: 14px;
-    line-height: 150%;
+.alerta p{
+    font-weight: 400;
+    font-size: 12px;
     color: #495057;
     opacity: 0.8;
 }
 
+.alerta img{
+    width: 16px;
+    margin-right: 8px;
+}
+
 .botones{
-    margin-left: 240px;
-    width: 680px;
     display: flex;
     justify-content: space-between;
-    margin-top: 4px;
 }
 
-#encriptar, #desencriptar, #copiar{
-    width: 328px;
-    height: 67px;
+.btn1, .btn2, .btn3{
+    width: calc(205vw / 9);               
+    height: calc(1675vh / 256);               
     border-radius: 24px;
-    font-family: inherit;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
+    cursor: pointer;
 }
 
-#encriptar{
+.btn1{
     background-color: #0A3871;
     color: #FFFFFF;
     border: none;
 }
 
-#desencriptar, #copiar{
+.btn2, .btn3{
+    background-color: #D8DFE8;
     color: #0A3871;
-    border:1px solid #0A3871
+    border: 1px solid #0A3871;
 }
 
-.p2{
-    height: 1024px;
+/* Lo que haría el botón encriptar en JS  */
+
+.output-salida{
+    display: none;
 }
 
-.cont-salida{
-    background-color: white;
-    border-radius: 32px;
-    margin: 40px;
-    width: 400px;
-    height: 944px;
+.btn3{
+    display: none;
 }
 
-.salida-img{
-    margin: 243px 32px 0 32px;
-}
-
-.salida-msj{
-    margin: 32px;
-    text-align: center;
-}
-
-.salida-msj p:first-child{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    color: #343A40;
-    width: 336px;
-    height: 58px;   
-}
-
-/*Index2*/
-
-.cont-salida textarea{
-    width: 336px;
-    height: 781px;      
+.output-salida{
     border: none;
-    resize: none;
     outline: none;
-    font-family: inherit;
-    font-style: normal;
-    font-size: 24px;
+    resize: none;
+    width: calc(70vw / 3); 
+    height: calc(19525vh / 256);
+    margin: calc(20vw /9);
     line-height: 150%;
-    margin: 32px;
-    padding: 0;
+    font-size: 24px;
     color: #495057;
-    text-align: left;
-
 }
 
-.cont-copiar{
-    margin-left: 32px;
-    margin-bottom: 32px;
+.btn3{
+    background-color: #FFFFFF;
+    margin: calc(20vw / 9);
+} 
+
+@media (min-width: 375px) and (max-width: 1180px){ 
+    
+    .cnt-padre{
+        max-width: 100%;
+        height: calc(138400vh / 1174);
+    }
+
+    .cnt-logo{
+        margin: calc(3671vh / 587) calc(-75vw / 128);
+    } 
+    .cnt-input{
+        width: calc(1075vw / 12);                                      
+        height: calc(28800vh / 587); 
+        top: calc(12000vh / 587);
+        left: calc(125vw / 24);
+    }
+    .cnt-output{
+        width: calc(1075vw / 12);                          
+        height: calc(17150vh / 587);
+        top: auto;                          
+        left: 0;
+        bottom: 0;
+        margin: calc(125vw / 24);
+    }
+
+    .cnt-output h3{
+        font-size: 24px;
+    }
+    
+    .cnt-output p{
+        font-size: 16px;
+    }
+
+    .cnt-output img, .cnt-output br{
+        display: none;
+    }
+
+    .cnt-botones{
+        width: calc(1075vw / 12);                          
+        height: calc(5050vh / 587);          
+        bottom: calc(22350vh / 587);
+        left: calc(125vw / 24);
+    }
+
+    .btn1, .btn2, .btn3{
+        width: calc(2075vw / 48);               
+        height: calc(3350vh / 587);               
+    }
+
+    .output-salida{
+        width: calc(325vw / 4);
+        margin: calc(25vw / 6) calc(25vw / 6) 0 calc(25vw / 6);   
+        height: calc(9000vh / 587); 
+    }
+
+    .btn3{
+        width: calc(325vw / 4);
+        height: calc(3350vh / 587);   
+        margin: calc(25vw / 6);
+    } 
+
 }
+    
+@media (max-width: 375px){      
 
-#copiar{
-    width: 336px;
-}
+    .cnt-padre{
+        max-width: 100%;
+        height: calc(171500vh / 933);
+    }
 
-/*Responsividad*/
+    .cnt-logo{
+        margin: calc(800vh / 311) calc(-38vw / 5);
+    } 
+    .cnt-input{
+        width: calc(1372vw / 15);                                    
+        height: calc(9000vh / 311); 
+        top: calc(15200vh / 933);
+        left: calc(64vw / 15);
+    }
+    .cnt-output{
+        width: calc(436vw / 5);                          
+        height: calc(59500vh / 933);
+        top: auto;                          
+        left: 0;
+        bottom: 0;
+        margin: calc(4000vh / 933) calc(32vw / 5);
+    }
 
-@media (max-width: 768px){
-    body{
-        background-color: aqua;
+    .cnt-output h3{
+        flex-basis: 100%;
+        font-size: 24px;
+    }
+
+    .output-salida {
+        width: calc(372vw / 5);
+        height: calc(14400vh / 311);
+        margin: calc(128vw / 15);
+    }
+
+    .cnt-output p{
+        font-size: 16px;
+    }
+
+    .cnt-output img{
+        display: none;
+    }
+
+    .cnt-botones{
+        width: calc(1372vw / 15);                          
+        height: calc(19000vh / 933);          
+        bottom: calc(68300vh / 933);
+        left: calc(64vw / 15);
+        justify-content: space-between;
+    }
+
+    .botones{
+        height: 158px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .btn1, .btn2{
+        width: 100%; 
+        height: calc(6700vh / 933);                            
+    }
+
+    .btn3{
+        width: calc(372vw / 5);
+        height: calc(6700vh / 933);
+        margin: calc(128vw / 15);
     }
 }
+
+
